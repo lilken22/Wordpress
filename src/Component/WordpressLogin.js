@@ -30,12 +30,14 @@ const WordpressLogin = () => {
           <input type="checkbox" id="check" />Remember me
         </label>
         <div className="btn">
-          <button type="button">Log in</button>
+          <button type="button"onClick={() => window.location.href = 'https://www.wordpress.com'}>Log in</button>
         </div>
       </div>
       <div className="anchor">
         <Link href="#">Lost Password?</Link> .
-        <Link href="#">Create account</Link>
+        <Link href="#"
+        onClick={() => window.location.href = 'https://wordpress.com/start'}
+        >Create account</Link>
       </div>
       <div className="select-container">
         <select id="language-locales" name="locale">
